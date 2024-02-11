@@ -1,38 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropbtn {
-    background-color: #f1f1f1;
-    color: black;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    overflow-y: auto;
-    border: 1px solid #ddd;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-  }
-  
+.wrap { 
+    display: grid;
+    padding-left: 15px;
+    width: calc(100% - 30px);
+    grid-template-columns: auto 1fr;
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.s1 { 
+    float: left; /*Задаем обтекание*/ 
+    margin-right: 10px; 
+    text-align: center; /*Центрируем текст по горизонтали*/ 
+} 
+.s2 { 
+    float: left; /*Задаем обтекание*/ 
+    width: 100%;
+    text-align: center; /*Центрируем текст по горизонтали*/ 
+} 
