@@ -9,5 +9,13 @@
 <body>
     
     <button>RR</button>
-    <script src="script.js"></script>
+    <script>
+        var WebApp = window.Telegram.WebApp;
+
+        var MainButton = WebApp.MainButton;
+        var BackButton = WebApp.BackButton;
+
+        MainButton.show();
+        BackButton.show();
+    </script>
 </body>
