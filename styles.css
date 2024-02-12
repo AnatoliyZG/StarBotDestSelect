@@ -1,6 +1,7 @@
 .wrap { 
     display: grid;
     padding-left: 15px;
+    padding-bottom: 5px;
     width: calc(100% - 30px);
     grid-template-columns: auto 1fr;
 }

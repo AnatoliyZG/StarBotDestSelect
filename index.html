@@ -25,9 +25,9 @@
         <script>
             let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
             tg.expand();
-            
-            //let button1 = document.getElementById("btn");
-            
+            ymaps.ready(()=>{
+                alert("123");
+            });
             function select(callback){
                 tg.close();
             }

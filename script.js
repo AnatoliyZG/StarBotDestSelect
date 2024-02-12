@@ -3,7 +3,6 @@ var options = '';
 fetch('https://anatoliyzg.github.io/StarBotDestSelect/data.txt')
   .then(response => response.text())
   .then(data => {
-    alert(data);
     const items = data.split('\n');
     items.forEach(item => {
         options += '<option value="'+item+'" />';
