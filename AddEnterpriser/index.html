@@ -21,8 +21,8 @@
         tg.expand();
 
         tg.MainButton.show();
-
-        Telegram.WebApp.onEvent('mainButtonClicked', function () {
+        tg.MainButton.onClick(() => {
+            alert("QQ");
             tg.sendData("some string that we need to send");
         });
     </script>
