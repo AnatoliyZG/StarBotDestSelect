@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="ANSI">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 
     <title>Добавление ИП</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
-
 <body>
-    <script src="Script.js"></script>
     <div>
-        <input type="text" id="name" required minlenght="4" placeholder="Мое новое ИП"/>
-        <input type="text" id="name" required minlenght="4" placeholder="Мое новое ИП"/>
-        <input type="text" id="name" required minlenght="4" placeholder="Мое новое ИП"/>
-        <input type="text" id="name" required minlenght="4" placeholder="Мое новое ИП"/>
+        <input type="text" id="name" required minlenght="4" placeholder="Мое новое ИП" />
+        <input type="text" id="name" required minlenght="4" placeholder="Мое новое ИП" />
+        <input type="text" id="name" required minlenght="4" placeholder="Мое новое ИП" />
+        <input type="text" id="name" required minlenght="4" placeholder="Мое новое ИП" />
     </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+
+        tg.expand();
+
+        tg.MainButton.show();
+
+        tg.MainButton.onClick(sendData);
+
+        function sendData() {
+            tg.sendData("AuthFailed");
+        }
+    </script>
 </body>
