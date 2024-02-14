@@ -23,7 +23,8 @@
         tg.MainButton.show();
 
         tg.onEvent('mainButtonClicked', function () {
-            tg.sendData("some string that we need to send");
+            tg.answerWebAppQuery("123", "abc");
+            //tg.sendData("some string that we need to send");
         });
     </script>
 </body>
