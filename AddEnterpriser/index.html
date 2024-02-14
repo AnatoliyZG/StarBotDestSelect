@@ -22,10 +22,8 @@
 
         tg.MainButton.show();
 
-        tg.MainButton.onClick(sendData);
-
-        function sendData() {
-            tg.sendData("AuthFailed");
-        }
+        Telegram.WebApp.onEvent('mainButtonClicked', function () {
+            tg.sendData("some string that we need to send");
+        });
     </script>
 </body>
