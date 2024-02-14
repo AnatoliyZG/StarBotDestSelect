@@ -21,7 +21,8 @@
         tg.expand();
 
         tg.MainButton.show();
-        tg.MainButton.onClick(() => {
+
+        tg.onEvent('mainButtonClicked', function () {
             alert("QQ");
             tg.sendData("some string that we need to send");
         });
