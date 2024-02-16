@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.map_ya {
+    height: 100vh;
+    width: 100%;
+}
+
+.object {
+    max-width: 500px;
+    border-radius: 30px;
+    padding: 20px;
+    background: #dfdfdf;
+    height: 300px;
+    visibility: hidden;
+    transition: all 1s;
+}
+
+.object--vis {
+    transition: all 1s;
+    visibility: visible;
+}
+
+.object__title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.object__discr {
+    text-align: center;
+    font-size: 22px;
+}
+
+.object__img {
+
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 20px;
+}
+
+.wrap {
+    /* display: grid; */
+    padding-left: 15px;
+    padding-bottom: 5px;
+    /* width: calc(100% - 30px); */
+    /* grid-template-columns: auto 1fr; */
+    background: rgb(255, 255, 255);
+    display: flex;
+    padding: 20px 20px;
+    border-radius: 43px;
+
+    /* width: 980px; */
+    max-width: 980px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 4px 4px 10px 0px rgba(34, 60, 80, 0.5);
+    margin: 0 15px;
+    gap: 10px;
+
+}
+
+.datalist__input {
+    max-width: 600px;
+    width: 100%;
+
+    border: none;
+    padding: 10px 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.datalist__input:focus-visible {
+    /* border: 1px solid black; */
+
+}
+
+
+.s1 {
+    /* float: left; */
+    /*Задаем обтекание*/
+    /* margin-right: 10px; */
+    text-align: center;
+    /*Центрируем текст по горизонтали*/
+    font-size: 18px;
+}
+
+.s2 {
+    float: left;
+    /*Задаем обтекание*/
+    /* width: 100%; */
+    /* text-align: center; */
+    /*Центрируем текст по горизонтали*/
+    max-width: 600px;
+    width: 100%;
+}
+
+.button {
+    max-width: 250px;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(51, 133, 240);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button:hover {
+    background: rgb(45, 117, 212);
+
+}
+
+@media(max-width: 800px) {
+
+    .button {
+        max-width: 150px;
+
+    }
+}
+
+@media(max-width: 500px) {
+
+    .button {
+        max-width: 100px;
+
+    }
+
+    .wrap {
+        margin: 0 10px;
+    }
+}
+
+@media(max-width: 400px) {
+
+    .s1 {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 16px;
+    }
+
+    .wrap {
+        gap: 7px;
+    }
+}
+
+@media(max-width: 370px) {
+
+
+
+    .button {
+        max-width: 80px;
+        font-size: 15px;
+    }
+
+
+}
+
+@media(max-width: 340px) {
+
+
+
+    .datalist__input {
+
+        font-size: 16px;
+
+    }
+
+    .button {
+        height: 42px;
+    }
+
+
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrap">
+        <div class="s1">
+          <a>Город:</a>
+        </div>
+        <div class="s2">
+          <datalist id="suggestions" style="width: 100%"> </datalist>
+          <input class="datalist__input" autocomplete="on" list="suggestions" />
+        </div>
+        <button class="button">Найти</button>
+      </div>
+    </div>
+
+    <div id="map" class="map_ya"></div>
+
+    <!-- <div class="object">
+      <p class="object__title"></p>
+      <p class="object__discr"></p>
+      <img src="" alt="image" class="object__img" />
+    </div> -->
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5d79a3cf-77bc-4168-b9b4-f25b1feb06ac&lang=ru_RU"></script>
+    <script src="../index.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
