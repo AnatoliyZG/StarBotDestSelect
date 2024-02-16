@@ -985,7 +985,7 @@ function init() {
         for (let i = 0; i < collection.features.length; i++) {
             if (collection.features[i].id == target) {
                 activeObject = collection.features[i];
-                send('add_account');
+                send('add_point');
                 console.log(activeObject.properties.balloonContent); // вывод в консоль информации, которая в баллуне
                 break;
             }
